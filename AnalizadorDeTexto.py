@@ -1,7 +1,7 @@
 poema = "Amor, ese sentimiento que invade mi ser, que me hace soñar despierta y suspirar sin querer."
-letra1 = input("Ingrese primera letra: ")
-letra2 = input("Ingrese segunda letra: ")
-letra3 = input("Ingrese tercera letra: ")
+letra1 = input("Ingrese primera letra: ").lower()
+letra2 = input("Ingrese segunda letra: ").lower()
+letra3 = input("Ingrese tercera letra: ").lower()
 
 poema_minuscula = poema.lower()
 
@@ -31,9 +31,9 @@ print(f"Cantidad de {letra2}: ", total_letra2)
 print(f"Cantidad de {letra3}: ", total_letra3)
 
 anuncio_cantidad_palabras = """
-**********************
-|CANTIDADES DE LETRAS|
-**********************
+************************
+|CANTIDADED DE PALABRAS|
+************************
 """
 print(anuncio_cantidad_palabras)
 print(f"Cantidad de palabras: ", len(poema.split()))
